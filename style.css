@@ -70,10 +70,13 @@ h2 {
 
 /* Home Page Cards Styling */
 .homecard-arrange {
+
   display: flex;
   justify-content: center;
+  flex-direction: column;
+  align-items: center;
   gap: 30px;
-  padding: 30px;
+  padding: 20px;
 }
 
 @media only screen and (max-width: 600px) {
@@ -81,12 +84,13 @@ h2 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
   }
   
 }
 
 .homecard {
-  width: 18rem;
+  width: auto;
   border: 1px solid #333;
   border-radius: 10px;
   overflow: hidden;
@@ -112,7 +116,7 @@ a {
 
 .cardpic {
   width: 100%;
-  height: 180px;
+  height: 100%;
   object-fit: cover;
 }
 
@@ -400,7 +404,7 @@ nav {
 .image-row {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: center;
   gap: 20px;
 
 }
