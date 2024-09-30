@@ -7,6 +7,90 @@ body {
   background-color: #111;
   
 }
+/* Basic styling for the navigation links */
+.nav-links {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.nav-links li {
+  position: relative;
+}
+
+.nav-links a {
+  text-decoration: none;
+
+  display: block;
+  color: #000; /* Default text color */
+}
+
+/* Dropdown arrow styling */
+.arrow {
+  font-size: 0.6em;
+  margin-left: 3px;
+}
+
+/* Dropdown menu styling */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  border-radius: 10px;
+}
+
+.dropdown-content li {
+  list-style-type: none;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+/* Show the dropdown content on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Rotate the arrow when hovering */
+.dropdown:hover .arrow {
+  transform: rotate(180deg); /* Rotates arrow upside down */
+}
+
+/* Add some styling for active state */
+.nav-links a.active {
+  font-weight: bold;
+  color: #555;
+}
+
+/* Hover styling for projects */
+.nav-links .dropdown a:hover {
+  color: #555; /* Changes link color on hover */
+}
+
+/* Style for the current page inside the dropdown */
+.nav-links .current-page {
+  font-weight: bold;
+  color: #c80be9; /* Highlight color for the current project */
+}
+
+/* Style when hovering over the current page */
+.nav-links .current-page:hover {
+  background-color: #444;
+  color: #c80be9; /* Keep the highlight color consistent */
+}
+
 
 .logo img {
   width: 50px;
@@ -283,9 +367,7 @@ nav {
     flex-direction: column;
 
   }
-  
 }
-
 
 .highlight-item h3, .detail-item h4 {
   color: #fff;
@@ -564,11 +646,12 @@ nav {
 
 
 .carousalcardsdiv {
-  max-width: 500px;
+  width: 100%;
   display: flex;
+  justify-content: center;
   align-items: center;
-
 }
+
 
 .carousel-inner img {
   width: 300px; /* Sets the width of the images to 80% of the container */
@@ -597,12 +680,16 @@ nav {
   border-radius: 5px;
 }
 
+
 .carousel-indicators .active {
   border: 2px solid #007bff; /* Highlight the active thumbnail */
 }
 
 .bannerimg img{
   width: 300px;
+}
+.bannerimg-watch img{
+  width: 100%;
 }
 
 .homimate {
@@ -915,7 +1002,7 @@ a.btn:hover {
   top: 0;
   width: 100%; 
   height: 100%; 
-  background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent background */
+  background-color: rgba(0, 0, 0, 0.8)
 }
 
 /* Modal Content (zoomed-in image) */
@@ -953,4 +1040,83 @@ a.btn:hover {
 .hamburger {
   position: relative;
   z-index: 1000;
+}
+
+
+/* Navigation Watch */
+.image-watch-row {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  border-radius: 10px;
+}
+
+.iterative-design {
+  background-color: white;
+  display: flex;
+
+}
+
+.update-section {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.update-section p{
+  font-size: 18px;
+  font-weight: bold;
+  color: #7d0d6e;
+}
+
+.update-section li{
+  color: #888;
+}
+
+
+
+.update-image {
+ 
+
+  display: flex;
+  justify-content: center;
+}
+
+
+.update-image img{
+  max-width: 100%;
+  height: 180px; 
+  width: auto;
+}
+
+.hiwatch-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 80px;
+  border-radius: 10px;
+}
+
+.hiwatch-row img{
+  width: 100%;
+}
+
+.lowfiwatch-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  border-radius: 10px;
+  gap: 10px;
+}
+
+.lowfiwatch-row img{
+  width: 30%;
+}
+
+
+
+.image-watch-row img {
+  border-radius: 10px;
 }

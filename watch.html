@@ -18,27 +18,43 @@
       <a href="index.html">
         <img src="logo.png" alt="Julia's Logo">
       </a>
-    <ul class="nav-links">
-      <li><a href="about.html" class="active">About</a></li>
-      <li><a href="projects.html">Projects</a></li>
-      <li><a href="CV.html">CV</a></li>
+      <div class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <ul class="nav-links">
+  <li><a href="about.html">About</a></li>
+  <!-- Dropdown Menu with Arrow Always Visible -->
+  <li class="dropdown">
+    <a href="projects.html" class="active">Projects <span class="arrow">&#x25BC;</span></a> <!-- Arrow added here -->
+    <ul class="dropdown-content">
+      <li><a href="projects.html">Homimate</a></li>
+      <li><a href="watch.html"class="current-page">Navigation Watch</a></li>
+      <li><a href="https://www.figma.com/proto/yeDsWy2x2w0NF59gkB3Iz5/Assignment-3?page-id=709%3A4533&node-id=709-4850&node-type=frame&viewport=1328%2C370%2C0.23&t=POCIRYb1PxSAQuoX-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=709%3A4850">ThumbsUp</a></li>
     </ul>
+  </li>
+  
+  <li><a href="CV.html">CV</a></li>
+  </ul>
+
+  
     </div>
     </div>
   </nav>
   
+  
 
-  <section class="Navigation Watch">
+  <section class="homimate">
     <div class="container">
-      <h1>Coming Soon...Navigation Watch Development</h1>
-      <p>Navigation Watch at the Mall...</p>
+      <h1>Navigation Watch Development</h1>
+      <p>Navigation Watch at the Mall</p>
+    
+    <div class="bannerimg-watch">
+      <img src="Hiwatch1.png" alt="Navigation UI">
     </div>
-    <div class="bannerimg">
-      <img src="Card2.png" alt="Hommimate">
-    </div>
+  </div>
   </section>
-
-
   
 
   <main>
@@ -50,14 +66,15 @@
       <div class="highlight-item">
         <h3>Challenge</h3>
         <p>
-          This navigation watch project is dedicated to solve inefficiency of the design of navigation boards in shopping centers to provide better user experience for shoppers.
+          This navigation watch project is dedicated to solving the inefficiencies in the design of navigation boards in shopping centers, with the goal of providing a better user experience for shoppers. The project will primarily focus on <span class="highlight">user testing</span> and an <span class="highlight">iterative design process</span>.
         </p>
+        
       </div>
     </div>
     <div class="details-grid">
       <div class="detail-item">
         <h4>Timeline</h4>
-        <p>Jan 2022 - Apr 2022</p>
+        <p>Jan 2022 - May 2022</p>
       </div>
       <div class="detail-item">
         <h4>Disciplines</h4>
@@ -65,11 +82,11 @@
       </div>
       <div class="detail-item">
         <h4>Responsibilities</h4>
-        <p>UX Research<br>Persona Design<br>Sketching<br>UX/UI Mobile Design<br>Prototyping</p>
+        <p>UX Research<br>Sketching<br>User Testing<br>Iterate on the Design</p>
       </div>
       <div class="detail-item">
         <h4>Tools</h4>
-        <p>Figma<br>Balsamiq<br>Miro<br>Google Docs</p>
+        <p>Figma<br>Balsamiq<br>Miro</p>
       </div>
     </div>
   </div>
@@ -77,66 +94,368 @@
   
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  <!-- Footer Section -->
-  <footer class="footer-section">
-    <div class="footer-content">
-      <p class="footer-message">👋 Thanks for stopping by! Here is more of me if you are interested :)</p>
-      <div class="footer-columns">
-        <div class="footer-column">
-          <h4>PAGES</h4>
-          <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About Me</a></li>
-            <li><a href="projects.html">Projects</a></li>
-            <li><a href="CV.html">CV</a></li>
-          </ul>
-        </div>
-
-        <div class="footer-column">
-          <h4>PROJECTS</h4>
-          <ul>
-            <li><a href="#">Homimate</a></li>
-            <li><a href="#">Navigation Watch</a></li>
-          </ul>
-        </div>
-
-        <div class="footer-column">
-          <h4>LET'S CONNECT</h4>
-          <ul>
-            <li><a href="https://www.linkedin.com/in/julia-yangrq/">LinkedIn</a></li>
-            <li><a href="#" onclick="showEmail()">Email</a></li>
-          </ul>
-      </div>
+  <!-- Background Section -->
+  <section class="project-background">
+    <div class="container">
+      <h3>Our Vision</h3>
+      <p>
+        As frequent shoppers, we have experienced firsthand the frustration of navigating large shopping centers. Shoppers often struggle to find stores efficiently due to outdated or poorly designed navigation systems. The goal of the Navigation Watch project is to create an intuitive, wearable solution that enhances the shopping experience by providing real-time, easy-to-follow directions within malls. Our vision for the future is to revolutionize indoor navigation by offering seamless integration with store maps, personalized recommendations, and accessibility features, ultimately transforming the way people interact with shopping environments.
+      </p>
       
-      <script>
-          function showEmail() {
-              alert('Thank you for trying to reach me! My email is: julia.yangrq@gmail.com');
-          }
-      </script>
+    </div>
+  </section>
+
+  <section class="problem-discovery">
+    <div class="container">
+      <h3>Research</h3>
+      <h2>Problem Discovery</h2>
+      <hr class="section-divider">
+
+      <p>
+        <strong>Summary:</strong> Our statistics find that the pain points of current navigation boards mainly lie in three aspects. The first is the low level of <span class="highlight">user-friendliness</span>. Most users being observed either find it difficult to read the map on the board or find it hard to memorize, which leads to the second issue of unnecessary <span class="highlight">time consumption</span> and lining up during peak hours. The last problem is users’ low-level acceptance of <span class="highlight">mobile navigation apps</span>.
+      </p>
+      
+      <p>
+        <strong>Observation methods:</strong> We adopted the <span class="highlight">ethnographic study</span> method. We conducted our observation by observing how customers <span class="highlight">interact with navigation boards</span> in different shopping centers in Toronto. We also followed some of the customers to find out what problems they would encounter on their way to the destination. During this process, we took notes of their <span class="highlight">conversations, body language,</span> and <span class="highlight">facial expressions</span>. We also used a camera to record users' interactions with the navigation board when it was necessary.
+      </p>
+
+      <div class="image-watch-row">
+        <img src="Watch Affinity.png" alt="Affinity Diagram">
+      </div>
+      <hr>
+      <p>
+        Our observation took place in five different shopping centers, including Square One, Scarborough Town Centre, Bramalea City Centre, Erin Mills Town Centre, and Yorkdale. Based on the problems we identified in ten users using the navigation board, we categorized the issues into nine common problems and generated a <span class="highlight">color-coded diagram</span> for further analysis. The <span class="highlight">navigation search board</span> has a large <span class="highlight">gulf of execution</span>, according to our observation.
+      </p>
+      
+      <ol>
+        <li>
+          The system failed to be compatible with <span class="highlight">spelling errors</span> of the brand name. To address this, the design should allow a certain degree of spelling errors rather than expecting users to enter a flawless input. In addition, the design should improve the <span class="highlight">keyword association</span> function to help users save time in finding their destination, as 6/40 users could not find the brand simply by typing the name.
+        </li>
+        <li>
+          The <span class="highlight">navigation screen design</span> does not account for users born with a poor sense of direction, who find it difficult to read maps. These users need a device that provides simple, clear directions on where to go, rather than requiring them to figure out the entire map.
+        </li>
+        <li>
+          Users often <span class="highlight">forget the route</span> towards their destination and get lost midway. Therefore, they need a portable device that offers continuous guidance along the way.
+        </li>
+        <li>
+          When users spend too much time figuring out the route on the screen, it causes traffic congestion during peak hours, leading to longer waiting times. This highlights the need for an <span class="highlight">easy-to-use portable device</span>, as mentioned in points 2 and 3.
+        </li>
+        <li>
+          Users need <span class="highlight">touch screen features</span> to improve their experience.
+        </li>
+      </ol>
+      
+      
+    </div>
+  </section>
+
+
+
+      
+  </section>
+
+  <section class="problem-discovery">
+    <div class="container">
+      <h3>Prototyping</h3>
+      <h2>Iterative Design Process</h2>
+      <hr class="section-divider">
+      <p>The first UI paper prototypes were created as low-fidelity representations of user interfaces. These simple sketches included rough outlines of UI elements for the task flow of four solutions.</p>
+      <div class="lowfiwatch-row">
+        <img src="Watch1.png" alt="low fi design">
+        <img src="Watch2.png" alt="low fi design">
+        <img src="Watch3.png" alt="low fi design">
+        <img src="Watch4.png" alt="low fi design">
+        <img src="Watch5.png" alt="low fi design">
+      </div>
+      <hr>
+      <p>
+        For the first <span class="highlight">user testing</span>, we used simple sketched drawings to gather feedback. The result shows that the first round of testing lacked effort in three areas: <span class="highlight">time control</span>, <span class="highlight">camera position</span>, and <span class="highlight">scenario building</span>. These issues are interrelated and affect each other, so they need to be solved in order.
+      </p>
+      
+      <p>
+        After realizing that our testing was too time-consuming, we decided to create a simple <span class="highlight">scenario</span> for users to more freely explore the features of our device and minimize the amount of interaction between us and the testers. The scenario includes a set of situations users face during their experience using our device, which covers interaction with all the main features.
+      </p>
+      
+      <p>
+        Another issue we faced during user testing was <span class="highlight">camera positioning</span>. Since our prototype consisted of two large 3D cardboard stands and two of our group members were introducing the device, they constantly blocked the view of the camera. The angle of the camera had to be adjusted frequently, which was extremely time-consuming. We have decided to assign one of our group members to be in charge of the camera. With the new scenario constructed, the blocking issue will no longer exist.
+      </p>
+      
+    </div>
+  </section>
+
+
+  <div class="container">
+    <div class="carousalcardsdiv">
+    <div class="cardcenter">
+    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="Testing1.png" class="d-block w-100" alt="Graphic Design 1">
+        </div>
+        <div class="carousel-item">
+          <img src="Testing2.png" class="d-block w-100" alt="Graphic Design 2">
+        </div>
+        <div class="carousel-item">
+          <img src="Testing3.png" class="d-block w-100" alt="Graphic Design 3">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </div>
+  </div>
+  </div>
+  <hr>
+  <hr>
+
+  <section class="iterative-design">
+    <div class="container">
+      <hr class="section-divider">
+  
+      <!-- Update 1 -->
+
+      <div class="update-section">
+        <h3>
+          The above feedback contributes to our iterative design process as follows:
+        </h3>
+        <hr>
+      <p>Update 1: Homepage simplified & A shortcut is added
+        <li>“Historical task” is deleted because most users found it not useful. "Return device” is added to help users quickly return the device to a nearby charger.</li>
+      </p>
+
+      <div class="update-image">
+        <img src="Update1.png" alt="Update 1">
       </div>
     </div>
-  </footer>
+
 
   
+      <!-- Update 2 -->
+      <hr class="section-divider">
+      <div class="update-section">
+      <p>Update 2: Interface path simplified
+        <li>The page jumps directly to the current task when the “start” button is pressed, skipping unnecessary interactions.</li>
+      </p>
+      <div class="update-image">
+        <img src="Update2.png" alt="Update 2">
+      </div>
+      </div>
+  
+      <!-- Update 3 -->
+      <hr class="section-divider">
+      <div class="update-section">
+      <p>Update 3: Handwriting function added
+        <li>A handwriting board is added for the search bar to improve user experience on small devices.</li>
+      </p>
+      <div class="update-image">
+        <img src="Update3.png" alt="Update 3">
+      </div>
+      </div>
+  
+      <!-- Update 4 -->
+      <hr class="section-divider">
+      <div class="update-section">
+      <p>Update 4: Map page launched
+        <li>The real map layout is now implemented to show users their current locations, replacing the placeholder map.</li>
+      </p>
+      <div class="update-image">
+        <img src="Update4.png" alt="Update 4">
+      </div>
+      </div>
+  
+      <!-- Update 5 -->
+      <hr class="section-divider">
+      <div class="update-section">
+      <p>Update 5: Clarify current font size
+        <li>A button was added to signal the current font size to reduce user confusion.</li>
+      </p>
+      <div class="update-image">
+        <img src="Update5.png" alt="Update 5">
+      </div>
+      </div>
+  
+      <!-- Update 6 -->
+      <hr class="section-divider">
+      <div class="update-section">
+      <p>Update 6: Pop up message for font size setting
+        <li>To complement Update 5, a pop-up message was added to confirm font size settings.</li>
+      </p>
+      <div class="update-image">
+        <img src="Update6.png" alt="Update 6">
+      </div>
+      </div>
+  
+      <!-- Update 7 -->
+      <hr class="section-divider">
+      <div class="update-section">
+      <p>Update 7: Clarify current language
+        <li>A button was added to clarify the current language setting, similar to the font size update.</li>
+      </p>
+      <div class="update-image">
+        <img src="Update7.png" alt="Update 7">
+      </div>
+      </div>
+  
+      <!-- Update 8 -->
+      <hr class="section-divider">
+      <div class="update-section">
+      <p>Update 8: Pop up message for language setting
+        <li>Following Update 7, a pop-up message was added to confirm language settings.</li>
+      </p>
+      <div class="update-image">
+        <img src="Update8.png" alt="Update 8">
+      </div>
+      </div>
+  
+      <!-- Update 9 -->
+      <hr class="section-divider">
+      <div class="update-section">
+      <p>Update 9: “Find information desk” page installed
+        <li>A new page shows users the route to the information desk, resolving confusion caused by the missing page in previous tests.</li>
+      </p>
+      <div class="update-image">
+        <img src="Update9.png" alt="Update 9">
+      </div>
+      </div>
+  
+      <!-- Update 10 -->
+      <hr class="section-divider">
+      <div class="update-section">
+      <p>Update 10: Clarify “Assistance” function
+        <li>A pop-up window explains the function of the “Assistance” button, and a second pop-up reminds users to stay in place for assistance.</li>
+      </p>
+      <div class="update-image">
+        <img src="Update10.png" alt="Update 10">
+      </div>
+      </div>
+  
+      <!-- Update 11 -->
+      <hr class="section-divider">
+      <div class="update-section">
+      <p>Update 11: “Return device button” page installed
+        <li>A secondary page shows the route from the user's current location to the nearest charger bank to facilitate quick returns.</li>
+      </p>
+      <div class="update-image">
+        <img src="Update11.png" alt="Update 11">
+      </div>
+      </div>
+  
+      <!-- Update 12 -->
+      <hr class="section-divider">
+      <div class="update-section">
+      <p>Update 12: Warning pop up window added
+        <li>A pop-up window warns users to return the device before leaving the shopping center, with a “return device” button integrated for convenience.</li>
+      </p>
+      <div class="update-image">
+        <img src="Update12.png" alt="Update 12">
+      </div>
+      </div>
+  </section>
+  
+  <section class="problem-discovery">
+    <div class="container">
+      <hr>
+      <h2>Final Design</h2>
+      <hr class="section-divider">
+      <p>After multiple rounds of testing and feedback, the final design was created. The final design includes a simplified homepage, a shortcut to return the device, a simplified interface path, a handwriting function, a real map layout, and more.</p>
+      <div class="hiwatch-row">
+        <img src="Hiwatch1.png" alt="Final Design 1">
+        <img src="Hiwatch2.png" alt="Final Design 2">
+      </div>
+  </div>
+  </section>
+
+  <section class="problem-discovery">
+    <div class="container">
+      <hr>
+      <h2>Final Design</h2>
+      <hr class="section-divider">
+      <p>
+        After completing this assignment, I gained an in-depth understanding of how to conduct <span class="highlight">iterative design</span> through <span class="highlight">user testing</span>, including gathering actionable feedback and making data-driven design decisions. I also developed a deeper appreciation for <span class="highlight">user-centered design principles</span>, ensuring that the product evolves with the needs of real users. Additionally, I now have a better grasp of the <span class="highlight">stakeholder communication</span> process, where I learned how to effectively present design iterations and gather input to strike the right balance between <span class="highlight">user needs</span> and <span class="highlight">business objectives</span>. This experience has reinforced the importance of maintaining a balance between <span class="highlight">usability</span>, <span class="highlight">accessibility</span>, and <span class="highlight">business goals</span> throughout the design process.
+      </p>
+    </div>
+  </section>      
+
+  
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Footer Section -->
+    <footer class="footer-section">
+      <div class="footer-content">
+        <p class="footer-message">👋 Thanks for stopping by! Here is more of me if you are interested :)</p>
+        <div class="footer-columns">
+          <div class="footer-column">
+            <h4>PAGES</h4>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About Me</a></li>
+              <li><a href="projects.html">Projects</a></li>
+              <li><a href="CV.html">CV</a></li>
+            </ul>
+          </div>
+  
+          <div class="footer-column">
+            <h4>PROJECTS</h4>
+            <ul>
+              <li><a href="projects.html">Homimate</a></li>
+              <li><a href="watch.html">Navigation Watch</a></li>
+              <li><a href="https://www.figma.com/proto/yeDsWy2x2w0NF59gkB3Iz5/Assignment-3?page-id=709%3A4533&node-id=709-4850&node-type=frame&viewport=1328%2C370%2C0.23&t=POCIRYb1PxSAQuoX-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=709%3A4850">ThumbsUp</a></li>
+            </ul>
+          </div>
+  
+          <div class="footer-column">
+            <h4>LET'S CONNECT</h4>
+            <ul>
+              <li><a href="https://www.linkedin.com/in/julia-yangrq/">LinkedIn</a></li>
+              <li><a href="#" onclick="showEmail()">Email</a></li>
+            </ul>
+        </div>
+        <script>
+          const hamburger = document.querySelector('.hamburger');
+          const navLinks = document.querySelector('.nav-links');
+          
+          hamburger.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+          });
+          </script>
+        <script>
+            function showEmail() {
+                alert('Thank you for trying to reach me! My email is: julia.yangrq@gmail.com');
+            }
+        </script>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz4fnFO9gybUhKwJ1BPtGp4UoCI8tPjVxCvHU5ajsHdU813zBvs687Qf24" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12RmWwv/ENqfZ19Cpr+4Mc35MYv52zIc5STzHEu8I7YvW8wT" crossorigin="anonymous"></script>
+
 </body>
 </html>
+
