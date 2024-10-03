@@ -26,6 +26,104 @@ body {
   color: #000; /* Default text color */
 }
 
+
+.hamburger {
+  position: relative;
+  z-index: 9999;
+}
+
+/* Hamburger menu icon */
+.hamburger {
+  display: none;
+  cursor: pointer;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.hamburger span {
+  width: 25px;
+  height: 3px;
+  background-color: #fff;
+}
+
+nav {
+  background-color: #1c1c1c; /* Navbar background color */
+  padding: 20px 60px; /* Adjust spacing around the navbar */
+  
+}
+
+@media only screen and (max-width: 600px) {
+  nav {
+    
+    padding: 40px 10px 10px; /* Adjust spacing around the navbar */
+  }
+}
+
+.logo {
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  font-weight: bold;
+  justify-content: space-between;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 40px; /* Space between navigation items */
+}
+
+
+.nav-links a {
+  text-decoration: none;
+  color: #b0b0b0; /* Navigation link text color */
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.nav-links a:hover {
+  color: #ffffff; /* Hover effect for navigation links */
+}
+
+
+
+/* Mobile view */
+@media only screen and (max-width: 600px) {
+  .nav-links {
+    padding: 40px 0px 40px 0px;
+    
+    display: none; /* Hide the menu initially */
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    background-color: #333; /* Background color for mobile menu */
+    position: absolute;
+    top: 100px; /* Adjust according to your nav height */
+    left: 0;
+    border-radius: 10px;
+  }
+
+  .nav-links a {
+    padding: 10px;
+    display: block;
+    color: #fff;
+  }
+
+
+  /* Show the hamburger icon */
+  .hamburger {
+    display: flex;
+  }
+
+  /* Show the nav when toggled */
+  .nav-links.active {
+    display: flex;
+  }
+}
+
+
 /* Dropdown arrow styling */
 .arrow {
   font-size: 0.6em;
@@ -155,6 +253,31 @@ h2 {
 @media only screen and (max-width: 600px) {
   .hero {
     background-color: #333;
+    padding-top: 80px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .hero h1{
+    margin: 0;
+    padding-top: 15px;
+  }
+}
+
+.hero h2 {
+  font-size: 28px;
+  line-height: 1.5;
+  font-style: italic;
+  margin-bottom: 20px;
+  color: #fff; /* White text */
+}
+
+@media only screen and (max-width: 600px) {
+  .hero h2{
+    font-size: 20px;
+    padding:auto;
+    margin-left: 15px;
+    margin-right: 15px;
   }
 }
 
@@ -168,6 +291,12 @@ h2 {
   height: 100%;
   object-fit: cover; /* Makes sure the video covers the entire hero section */
   z-index: -1; /* Places the video behind the content */
+}
+
+@media only screen and (max-width: 600px) {
+  #hero-video {
+    display: none; /* Hides the video on screens smaller than 600px */
+  }
 }
 
 /* Home Page Cards Styling */
@@ -200,6 +329,7 @@ h2 {
   overflow: hidden;
   background-color: rgba(255, 255, 255, 0.1);
   box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
   transition: all 0.3s ease;
   
 }
@@ -210,9 +340,18 @@ h2 {
   }
 }
 
-.homecard {
-  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for zoom and shadow */
+
+.label {
+  display: inline-block;
+  background-color: #f0f0f0; /* Light background for label */
+  color: #333; /* Text color */
+  border-radius: 20px; /* Rounded corners */
+  padding: 15px 15px;
+  font-size: 14px;
+  margin-right: 5px; /* Spacing between labels */
+  font-weight: 600;
 }
+
 
 .homecard:hover {
   box-shadow: 2px 8px 16px rgba(255, 255, 255, 0.8); /* Optional shadow effect */
@@ -231,7 +370,7 @@ a {
 }
 
 .card-body {
-  padding: 15px;
+  padding: 20px;
 }
 
 .card-number {
@@ -246,8 +385,10 @@ a {
 }
 
 .card-text {
-  font-size: 14px;
-  color: #ccc; /* Light gray text */
+  font-size: 20px;
+  font-style: normal;
+  line-height: 1.6;
+  color: #fff; /* Light gray text */
 }
 
 .btn-primary {
@@ -274,102 +415,13 @@ h1 {
 
 p {
   font-size: 20px;
-  margin-bottom: 40px;
+
 }
 
 .btn:hover {
   background-color: #f1f1f1;
 }
 
-nav {
-  background-color: #1c1c1c; /* Navbar background color */
-  padding: 20px 60px; /* Adjust spacing around the navbar */
-  
-}
-
-@media only screen and (max-width: 600px) {
-  nav {
-    
-    padding: 40px 10px 10px; /* Adjust spacing around the navbar */
-  }
-}
-
-.logo {
-  padding: 10px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 24px;
-  font-weight: bold;
-  justify-content: space-between;
-}
-
-.nav-links {
-  list-style: none;
-  display: flex;
-  gap: 40px; /* Space between navigation items */
-}
-
-
-.nav-links a {
-  text-decoration: none;
-  color: #b0b0b0; /* Navigation link text color */
-  font-size: 18px;
-  font-weight: 400;
-}
-
-.nav-links a:hover {
-  color: #ffffff; /* Hover effect for navigation links */
-}
-
-/* Hamburger menu icon */
-.hamburger {
-  display: none;
-  cursor: pointer;
-  flex-direction: column;
-  gap: 5px;
-}
-
-.hamburger span {
-  width: 25px;
-  height: 3px;
-  background-color: #fff;
-}
-
-
-/* Mobile view */
-@media only screen and (max-width: 600px) {
-  .nav-links {
-    padding: 40px 0px 40px 0px;
-    
-    display: none; /* Hide the menu initially */
-    flex-direction: column;
-    width: 100%;
-    text-align: center;
-    background-color: #333; /* Background color for mobile menu */
-    position: absolute;
-    top: 100px; /* Adjust according to your nav height */
-    left: 0;
-    border-radius: 10px;
-  }
-
-  .nav-links a {
-    padding: 10px;
-    display: block;
-    color: #fff;
-  }
-
-
-  /* Show the hamburger icon */
-  .hamburger {
-    display: flex;
-  }
-
-  /* Show the nav when toggled */
-  .nav-links.active {
-    display: flex;
-  }
-}
 
 /* Project Highlights Section */
 .project-highlights {
@@ -730,7 +782,6 @@ nav {
 .homimate h1 {
   font-size: 36px;
   margin-bottom: 10px;
-  color: #333;
 }
 
 .homimate p {
@@ -854,12 +905,12 @@ nav {
 
 .icon-groups {
   display: flex;
-  justify-content: space-between; /* Distributes space between groups */
+  justify-content: center; /* Distributes space between groups */
   align-items: center;
   width: 100%; /* Adjust the width to fit the row */
   max-width: 1200px; /* Ensures it doesn't get too wide */
   margin-bottom: 40px;
-  padding: 10px;
+  gap: 10px;
 }
 
 @media only screen and (max-width: 600px) {
@@ -880,6 +931,13 @@ nav {
   border-radius: 10px;
 }
 
+@media only screen and (max-width: 600px) {
+  .icon-group {
+    background-color: rgba(113, 113, 113, 0.5);
+  }
+  
+}
+
 .icon-group img {
   margin: 10px;
   width: 50px;
@@ -888,8 +946,8 @@ nav {
 
 @media only screen and (max-width: 600px) {
   .icon-group img {
-    width: 30px;
-    height: 30px;
+    width: 40px;
+    height: 40px;
   }
 }
 
@@ -904,6 +962,8 @@ a.btn:hover {
 .myimage img{
   border-radius: 100%;
 }
+
+
 
 .phone {
 
@@ -1062,10 +1122,7 @@ a.btn:hover {
   to {transform: scale(1);}
 }
 
-.hamburger {
-  position: relative;
-  z-index: 1000;
-}
+
 
 
 /* Navigation Watch */
