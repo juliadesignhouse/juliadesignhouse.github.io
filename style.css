@@ -909,7 +909,6 @@ p {
   align-items: center;
   width: 100%; /* Adjust the width to fit the row */
   max-width: 1200px; /* Ensures it doesn't get too wide */
-  margin-bottom: 40px;
   gap: 10px;
 }
 
