@@ -4,7 +4,7 @@
 body {
   /* font-family: 'Montserrat', sans-serif;*/
   margin: 0;
-  background-color: #1c1c1c;
+  background-color: #000000;
 }
 
 /* Basic styling for the navigation links */
@@ -199,7 +199,7 @@ nav {
 h1 {
   font-size: 48px;
   font-weight: bold;
-  margin-bottom: 20px;
+
   background: linear-gradient(to right, #c74ff2, #fcaef9, #23e6e6, #004cff); /* Gradient effect */
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent; /* Makes the gradient visible in the text */
@@ -243,16 +243,19 @@ h2 {
 .hero {
   display: flex;
   align-items: center;
-  flex-direction: column;
+  justify-content: center;
   text-align: center;
   position: relative;
   overflow: hidden;
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 @media only screen and (max-width: 600px) {
   .hero {
     background-color: #333;
-    padding-top: 80px;
+    padding-top: 20px;
+    padding-bottom: 20px;
   }
 }
 
@@ -267,7 +270,7 @@ h2 {
   font-size: 28px;
   line-height: 1.5;
   font-style: italic;
-  margin-bottom: 20px;
+
   color: #fff; /* White text */
 }
 
@@ -300,7 +303,7 @@ h2 {
 
 /* Home Page Cards Styling */
 .homecard-arrange {
-  background: radial-gradient(circle at bottom, #3f0b3c,#0b103f, #2d2d2d, #3C3C3C);
+  background: white;
 
   display: flex;
   flex-wrap: wrap;
@@ -322,13 +325,14 @@ h2 {
 }
 
 .homecard {
-  max-width: 800px;
+  max-width: 500px;
   border-radius: 10px;
   overflow: hidden;
-  background-color: rgba(255, 255, 255, 0.1);
+  background-color: rgb(253, 253, 253);
   box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   transition: all 0.3s ease;
+  border: 1px solid #dcdcdc;
   
 }
 
@@ -354,8 +358,8 @@ h2 {
 
 
 .homecard:hover {
-  box-shadow: 2px 8px 16px rgba(255, 255, 255, 0.8); /* Optional shadow effect */
-  transform: scale(1.05); /* Zooms in the entire content (text, images, etc.) */
+  box-shadow: 2px 8px 16px rgba(0, 0, 0, 0.8); /* Optional shadow effect */
+  transform: scale(1.02); /* Zooms in the entire content (text, images, etc.) */
 }
 
 
@@ -374,7 +378,7 @@ a {
 }
 
 .card-number {
-  color: #ccc;
+  color: #242424;
 }
 
 .card-title {
@@ -388,7 +392,7 @@ a {
   font-size: 20px;
   font-style: normal;
   line-height: 1.6;
-  color: #fff; /* Light gray text */
+  color: #717171; /* Light gray text */
 }
 
 .btn-primary {
